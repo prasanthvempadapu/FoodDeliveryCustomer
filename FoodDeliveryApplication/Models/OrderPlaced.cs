@@ -10,6 +10,6 @@
 
         public string PhoneNo { get; set; }
 
-        public string OrderTime { get; set; }
+        public DateTime OrderTime { get; set; }
     }
 }

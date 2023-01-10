@@ -21,9 +21,9 @@ namespace FoodDeliveryApplication.Models
 
         public int Price { get; set; }
 
-        public string OrderTime { get; set; }
+        public DateTime OrderTime { get; set; }
 
-       public OrderDetails(int inVoiceNo, string userName, int restaurantId, string foodItem, int quantity, int price, string orderTime)
+       public OrderDetails(int inVoiceNo, string userName, int restaurantId, string foodItem, int quantity, int price, DateTime orderTime)
         {
             InVoiceNo = inVoiceNo;
             UserName = userName;
@@ -45,7 +45,7 @@ namespace FoodDeliveryApplication.Models
             
         }
 
-        public OrderDetails(int inVoiceNo, string userName, string foodItem, int quantity, int price, string orderTime)
+        public OrderDetails(int inVoiceNo, string userName, string foodItem, int quantity, int price, DateTime orderTime)
         {
             InVoiceNo = inVoiceNo;
             UserName = userName;
